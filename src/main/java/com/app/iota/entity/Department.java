@@ -1,11 +1,11 @@
 package com.app.iota.entity;
 
 import com.app.iota.entity.base.BaseEntity;
-import jakarta.persistence.Entity;
-import jakarta.persistence.JoinColumn;
-import jakarta.persistence.ManyToOne;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 import lombok.*;
+
+import java.util.ArrayList;
+import java.util.List;
 
 @Builder
 @Setter
@@ -17,7 +17,7 @@ import lombok.*;
 public class Department extends BaseEntity {
     private String name;
     private String description;
-    @ManyToOne
+    @OneToMany
     @JoinColumn(name = "manager_id")
-    private Manager manager;
+    private List<Manager> manager = new ArrayList<>();
 }

@@ -21,7 +21,6 @@ public class Employee extends BaseEntity {
     private String firstName;
     private String lastName;
     private String email;
-    private String phoneNumber;
     private String mobile;
 
     @OneToMany
