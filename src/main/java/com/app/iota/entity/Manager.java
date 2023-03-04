@@ -11,8 +11,7 @@ import lombok.*;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-@Table(name = "address")
-public class Address extends BaseEntity {
-    private String title;
-    private String location;
+@Table(name = "manager")
+public class Manager extends BaseEntity {
+    private String name ;
 }

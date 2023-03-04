@@ -1,4 +1,4 @@
-package com.app.iota.entity;
+package com.app.iota.entity.base;
 
 import jakarta.persistence.*;
 import lombok.Data;

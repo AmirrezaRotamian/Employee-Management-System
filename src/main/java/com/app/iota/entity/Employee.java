@@ -1,5 +1,6 @@
 package com.app.iota.entity;
 
+import com.app.iota.entity.base.BaseEntity;
 import jakarta.persistence.Entity;
 import jakarta.persistence.JoinColumn;
 import jakarta.persistence.OneToMany;
